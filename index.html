@@ -1,19 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="stylesheet" href="asset/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="asset/css/style.css" rel="stylesheet">
-
-<body>
-    <nav class="navbar bg-body-tertiary">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="asset/img/foto-profil.jpg" alt="Bootstrap" width="100" height="100">
-            </a>
-        </div>
-    </nav>
-</body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Dobby Adriyan Saputra</title>
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
+<body>
+    <audio id="background-music" loop>
+        <source src="asset/sound/lagu-latar.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="start-menu">
+        <div class="start-menu-content">
+            <h1>Selamat Datang di Portofolio Saya</h1>
+            <p>Tekan tombol di bawah untuk memulai</p>
+            <button id="start-btn">MASUK</button>
+        </div>
+    </div>
+
+    <main id="main-content">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Portofolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id="home" class="hero-section text-white text-center d-flex align-items-center">
+            <div class="container">
+                <img src="asset/img/foto-profil.jpg" class="rounded-circle mb-3" alt="Foto Profil"
+                    style="width: 150px; height: 150px; object-fit: cover;">
+                <h1>DOBBY ADRIYAN SAPUTRA</h1>
+                <p class="lead">Pengguna Ai | Mahasiswa | Content Creator</p>
+            </div>
+        </section>
+
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mx-auto text-center">
+                        <h2 class="mb-4">Tentang Saya</h2>
+                        <p>Halo! Saya adalah seorang profesional kreatif dengan semangat untuk menciptakan solusi digital yang inovatif dan menarik. Dengan pengalaman di bidang pengembangan web dan desain antarmuka, saya selalu berusaha untuk menghasilkan karya terbaik yang tidak hanya fungsional tetapi juga memberikan pengalaman pengguna yang luar biasa. Mari berkolaborasi!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Projek Saya</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="Gambar/proyek-1.png" class="card-img-top" alt="Project 1">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">DAC (Digital Alarm Clock)</h5>
+                                <p class="card-text">Membuat Hardware jam digital yang berbasis Esp8266 dengan memanfaatkan website untuk mengatur alarmnya.</p>
+                                <a href="#" class="btn btn-primary mt-auto">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="Gambar/proyek-2.png" class="card-img-top" alt="Project 2">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Fotografer</h5>
+                                <p class="card-text">"Fotografi adalah cara untuk memahami arti hidup.", dan kutipan inspiratif dari para master seperti: "Jika hasil foto Anda kurang bagus, itu karena Anda kurang dekat."</p>
+                                <a href="#" class="btn btn-primary mt-auto">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="Gambar/proyek-3.jpg" class="card-img-top" alt="Project 3">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Web Portofolio</h5>
+                                <p class="card-text">Membangun halaman portofolio pribadi untuk menampilkan karya-karya terbaik. Menggunakan HTML, CSS, dan JavaScript untuk desain yang responsif.</p>
+                                <a href="#" class="btn btn-primary mt-auto">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Hubungi Saya</h2>
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <form>
+                            <div class="mb-3"><label for="name" class="form-label">Nama</label><input type="text" class="form-control" id="name" required></div>
+                            <div class="mb-3"><label for="email" class="form-label">Email</label><input type="email" class="form-control" id="email" required></div>
+                            <div class="mb-3"><label for="message" class="form-label">Pesan</label><textarea class="form-control" id="message" rows="5" required></textarea></div>
+                            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-dark text-white text-center py-4">
+            <div class="container">
+                <p class="mb-2">&copy; 2025 Dobby Adriyan Saputra. All Rights Reserved.</p>
+                <div>
+                    <a href="#" class="text-white me-3 fs-4"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="text-white me-3 fs-4"><i class="bi bi-github"></i></a>
+                    <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+    </main> <div class="music-player">
+        <div class="popup-icon"><i class="bi bi-music-note"></i></div>
+        <div class="song-info">
+            <small>Now Playing</small>
+            <div class="song-title">Lagu Latar Portofolio</div>
+        </div>
+        <div class="music-controls">
+            <button id="play-pause-btn" class="control-btn"><i class="bi bi-pause-fill"></i></button>
+            <button id="mute-btn" class="control-btn"><i class="bi bi-volume-up-fill"></i></button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // --- Elemen untuk Start Menu ---
+            const startMenu = document.getElementById('start-menu');
+            const startBtn = document.getElementById('start-btn');
+            const mainContent = document.getElementById('main-content');
+            
+            // --- Elemen untuk Pemutar Musik ---
+            const audio = document.getElementById('background-music');
+            const playPauseBtn = document.getElementById('play-pause-btn');
+            const muteBtn = document.getElementById('mute-btn');
+            const musicPlayer = document.querySelector('.music-player');
+            let minimizeTimer;
+
+            // Ikon untuk pemutar musik
+            const playIcon = '<i class="bi bi-play-fill"></i>';
+            const pauseIcon = '<i class="bi bi-pause-fill"></i>';
+            const muteIcon = '<i class="bi bi-volume-mute-fill"></i>';
+            const unmuteIcon = '<i class="bi bi-volume-up-fill"></i>';
+
+            // --- Logika saat Tombol Start Ditekan ---
+            startBtn.addEventListener('click', () => {
+                // 1. Memutar musik (interaksi pengguna pertama kali)
+                audio.play().catch(error => console.log("Autoplay dicegah oleh browser."));
+
+                // 2. Hilangkan start menu dengan efek fade
+                startMenu.classList.add('fade-out');
+
+                // 3. Tampilkan konten utama dengan efek fade
+                mainContent.classList.add('visible');
+            });
+
+            // --- Logika Pemutar Musik ---
+            playPauseBtn.addEventListener('click', () => {
+                if (audio.paused) { audio.play(); } else { audio.pause(); }
+            });
+
+            muteBtn.addEventListener('click', () => {
+                audio.muted = !audio.muted;
+                muteBtn.innerHTML = audio.muted ? muteIcon : unmuteIcon;
+            });
+
+            audio.addEventListener('play', () => { playPauseBtn.innerHTML = pauseIcon; });
+            audio.addEventListener('pause', () => { playPauseBtn.innerHTML = playIcon; });
+
+            function startMinimizeTimer() {
+                clearTimeout(minimizeTimer);
+                minimizeTimer = setTimeout(() => {
+                    musicPlayer.classList.add('minimized');
+                }, 5000); // 5 detik
+            }
+
+            musicPlayer.addEventListener('mouseenter', () => {
+                clearTimeout(minimizeTimer);
+                musicPlayer.classList.remove('minimized');
+            });
+            
+            musicPlayer.addEventListener('mouseleave', () => {
+                startMinimizeTimer();
+            });
+
+            // Mulai timer minimize saat halaman dimuat
+            startMinimizeTimer();
+        });
+    </script>
+</body>
 </html>
