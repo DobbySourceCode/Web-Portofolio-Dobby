@@ -1,170 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Dobby Adriyan Saputra</title>
-    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="asset/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <div id="start-menu" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('asset/img/hero-background.jpg'); background-size: cover; background-position: center;">
-        <div class="start-menu-content">
-            <h1>Selamat Datang di My Kisah</h1>
-            <p>Tekan tombol di bawah untuk memulai</p>
-            <button id="start-btn">MASUK</button>
-        </div>
-    </div>
-
-    <main id="main-content">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container">
+    <header id="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-header">
+            <div class="container rounded-5" style="background-color: black;">
                 <a class="navbar-brand" href="#">
-                    <img src="asset/img/profil.jpg" alt="Profil" style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
-                    Portofolio</a>
+                    <img class="foto-profil" src="asset/img/profil.jpg" alt="Foto Profil">KYZRA</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: end;">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
+    </header>
 
-        <section id="home" class="hero-section text-white text-center d-flex align-items-center" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('asset/img/hero-background.jpg'); background-size: cover; background-position: center;">
-            <div class="container">
-                <img src="asset/img/foto-profil.jpg" class="rounded-circle mb-3" alt="Foto Profil"
-                    style="width: 300px; height: 300px; object-fit: cover; margin-top: 100px;">
-                <h1 style="color: #8c09e3;">DOBBY ADRIYAN SAPUTRA</h1>
-                <p class="lead">Pengguna Ai | Mahasiswa | Content Creator</p>
+    <section id="Hero" class="bg-logo font-color">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>Selamat Datang di Website Saya</h2>
+                    <p>Ini adalah paragraf pengantar yang menarik perhatian pengunjung.</p>
+                    <a href="#" class="btn btn-dark  ">Pelajari Lebih Lanjut</a>
+                </div>
+                <div class="col-sm-4 size-img">
+                    <img src="asset/img/foto-profil.jpg" alt="Hero Image" class="img-fluid rounded-circle">
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="about" class="py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 mx-auto text-center">
-                        <h2 class="mb-4">Tentang Saya</h2>
-                        <p>Halo! Saya adalah seorang profesional kreatif dengan semangat untuk menciptakan solusi digital yang inovatif dan menarik. Dengan pengalaman di bidang pengembangan web dan desain antarmuka, saya selalu berusaha untuk menghasilkan karya terbaik yang tidak hanya fungsional tetapi juga memberikan pengalaman pengguna yang luar biasa. Mari berkolaborasi!</p>
+
+
+
+
+
+
+
+
+    <section id="Services" style="padding-top: 0px 0; background-color: #8c08e3;">\
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner size-foto">
+                <div class="carousel-item active">
+                    <img src="asset/img/proyek-1.png" class="d-block w-100" alt="proyek-1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="asset/img/proyek-2.png" class="d-block w-100" alt="proyek-2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="asset/img/proyek-3.jpg" class="d-block w-100" alt="proyek-3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
                     </div>
                 </div>
             </div>
-        </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
 
-        <section id="projects" class="py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center mb-5">Projek Saya</h2>
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <img src="asset/img/proyek-1.png" class="card-img-top" alt="Project 1">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">DAC (Digital Alarm Clock)</h5>
-                                <p class="card-text">Membuat Hardware jam digital yang berbasis Esp8266 dengan memanfaatkan website untuk mengatur alarmnya.</p>
-                                <a href="#" class="btn btn-primary mt-auto">Lihat Detail</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <img src="asset/img/proyek-2.png" class="card-img-top" alt="Project 2">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Fotografer</h5>
-                                <p class="card-text">"Fotografi adalah cara untuk memahami arti hidup.", dan kutipan inspiratif dari para master seperti: "Jika hasil foto Anda kurang bagus, itu karena Anda kurang dekat."</p>
-                                <a href="#" class="btn btn-primary mt-auto">Lihat Detail</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <img src="asset/img/proyek-3.jpg" class="card-img-top" alt="Project 3">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Simple Web Portofolio</h5>
-                                <p class="card-text">Membangun halaman portofolio pribadi untuk menampilkan karya-karya terbaik. Menggunakan HTML, CSS, dan JavaScript untuk desain yang responsif.</p>
-                                <a href="#" class="btn btn-primary mt-auto">Lihat Detail</a>
-                            </div>
-                        </div>
-                    </div>
+
+
+
+
+<section id="About" class="about-section bg-light py-5">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col">
+                <h2 class="fw-bold">Tentang Saya</h2>
+                <p class="lead text-muted">Perkenalan singkat mengenai perjalanan dan keahlian saya.</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-lg-4 col-md-5 text-center mb-4 mb-md-0">
+                <img src="asset/img/tentang-saya.jpg" class="img-fluid rounded-circle shadow-sm" alt="Foto Profil [Nama Anda]">
+            </div>
+
+            <div class="col-lg-8 col-md-7">
+                <h3 class="fw-bold text-primary">Halo! Saya [Nama Anda]</h3>
+                <p>
+                    Saya seorang <strong>[Pekerjaan Anda, misal: Web Developer / Desainer Grafis / Mahasiswa Teknik Informatika]</strong> yang bersemangat dalam menciptakan solusi digital yang inovatif dan fungsional. Dengan pengalaman lebih dari [Jumlah] tahun, saya berfokus pada pengembangan aplikasi web yang responsif dan user-friendly.
+                </p>
+                <p>
+                    Perjalanan saya di dunia digital dimulai dari ketertarikan mendalam pada bagaimana teknologi dapat memecahkan masalah nyata. Saya percaya bahwa produk terbaik lahir dari kombinasi antara desain yang bersih, kode yang efisien, dan pengalaman pengguna yang intuitif.
+                </p>
+                
+                <div class="mt-4">
+                    <h5 class="fw-bold">Keahlian Utama:</h5>
+                    <span class="badge bg-primary me-1 mb-1">HTML5 & CSS3</span>
+                    <span class="badge bg-secondary me-1 mb-1">JavaScript (ES6+)</span>
+                    <span class="badge bg-success me-1 mb-1">Bootstrap 5</span>
+                    <span class="badge bg-danger me-1 mb-1">React.js</span>
+                    <span class="badge bg-warning text-dark me-1 mb-1">PHP</span>
+                    <span class="badge bg-info me-1 mb-1">Figma</span>
+                </div>
+
+                <div class="mt-4">
+                    <a href="#Contact" class="btn btn-primary">Hubungi Saya</a>
+                    <a href="path/to/cv.pdf" class="btn btn-outline-secondary ms-2" download>Unduh CV Saya</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <section id="contact" class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-5">Hubungi Saya</h2>
-                <div class="row">
-                    <div class="col-md-8 mx-auto">
-                        <form>
-                            <div class="mb-3"><label for="name" class="form-label">Nama</label><input type="text" class="form-control" id="name" required></div>
-                            <div class="mb-3"><label for="email" class="form-label">Email</label><input type="email" class="form-control" id="email" required></div>
-                            <div class="mb-3"><label for="message" class="form-label">Pesan</label><textarea class="form-control" id="message" rows="5" required></textarea></div>
-                            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
-                        </form>
-                    </div>
-                </div>
+
+
+
+
+
+
+
+
+
+    <section id="Contact" class="contact-section bg-light py-5">
+    <div class="container">
+        <div class="row text-center mb-4">
+            <div class="col">
+                <h2 class="fw-bold">Hubungi Saya</h2>
+                <p class="lead text-muted">Jangan ragu untuk terhubung dengan saya melalui informasi di bawah ini.</p>
             </div>
-        </section>
+        </div>
 
-        <footer class="bg-dark text-white text-center py-4">
-            <div class="container">
-                <p class="mb-2">&copy; 2025 Dobby Adriyan Saputra. All Rights Reserved.</p>
-                <div>
-                    <a href="#" class="text-white me-3 fs-4"><i class="bi bi-linkedin"></i></a>
-                    <a href="#" class="text-white me-3 fs-4"><i class="bi bi-github"></i></a>
-                    <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
-                </div>
+        <div class="row text-center justify-content-center">
+            
+            <div class="col-md-4 mb-4">
+                <i class="bi bi-geo-alt-fill fs-2 text-primary"></i>
+                <h4 class="mt-2">Alamat</h4>
+                <p class="text-muted">Surakarta, Jawa Tengah</p>
             </div>
-        </footer>
-    </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+            <div class="col-md-4 mb-4">
+                <i class="bi bi-envelope-fill fs-2 text-primary"></i>
+                <h4 class="mt-2">Email</h4>
+                <p class="text-muted">
+                    <a href="mailto:emailanda@example.com" class="text-decoration-none">emailanda@example.com</a>
+                </p>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <i class="bi bi-whatsapp fs-2 text-primary"></i>
+                <h4 class="mt-2">WhatsApp</h4>
+                <p class="text-muted">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="text-decoration-none">+62 812-3456-7890</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row text-center mt-4">
+            <div class="col">
+                <a href="#" class="text-dark mx-2 fs-3"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="text-dark mx-2 fs-3"><i class="bi bi-github"></i></a>
+                <a href="#" class="text-dark mx-2 fs-3"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+
+    </div>
+</section>
     
-    <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        // --- Elemen untuk Start Menu ---
-        const startMenu = document.getElementById('start-menu');
-        const startBtn = document.getElementById('start-btn');
-        const mainContent = document.getElementById('main-content');
-        
-        // Tambahkan ini: Mencegah scroll saat halaman pertama kali dimuat
-        document.body.classList.add('no-scroll');
-
-        // --- Logika saat Tombol Start Ditekan ---
-        startBtn.addEventListener('click', () => {
-            // Tambahkan ini juga: Mengaktifkan kembali scroll
-            document.body.classList.remove('no-scroll');
-
-            // Hilangkan start menu dengan efek fade
-            startMenu.classList.add('fade-out');
-            
-            // Tampilkan konten utama dengan efek fade
-            mainContent.classList.add('visible');
-            
-            // Inisialisasi AOS setelah konten terlihat
-            AOS.init({
-                duration: 1000,
-                once: true,
-            });
-
-            // Inisialisasi Typed.js setelah konten terlihat
-            var typed = new Typed('#typed-text', {
-                strings: ['Pengguna AI', 'Mahasiswa', 'Content Creator'],
-                typeSpeed: 50,
-                backSpeed: 25,
-                backDelay: 1500,
-                startDelay: 500,
-                loop: true,
-            });
-        });
-    });
-</script>
+    
+    
+    
+    
+    <footer class="bg-footer" style="padding: 10px 0; background-color: black;">
+        <p style="text-align: center; color: white;">Dibuat dengan kasih sayang</p>
+    </footer>
 </body>
+
 </html>
